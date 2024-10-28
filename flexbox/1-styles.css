@@ -499,6 +499,30 @@ ul.row {
     padding: var(--section-padding);
 }
 
+.section-services {
+    padding: var(--section-padding);
+}
+
+.section-works {
+    padding: var(--section-padding);
+}
+
+.section-testimonial {
+    padding: var(--section-padding);
+}
+
+.section-latest-news {
+    padding: var(--section-padding);
+}
+
+.section-about-us {
+    padding: var(--section-padding);
+}
+
+.section-contact {
+    padding: var(--section-padding);
+}
+
 .section-header {
     text-align: var(--section-header-align);
     padding: var(--section-header-padding);
@@ -574,10 +598,6 @@ ul.row {
 /* Card WORK
       ============================= */
 
-.section-work {
-    padding: var(--section-padding);
-}
-
 .card-work .card-outer {
     position: relative;
     overflow: hidden;
@@ -644,10 +664,6 @@ ul.row {
 /* Card SERVICES
       ============================= */
 
-.section-service {
-    padding: var(--section-padding);
-}
-
 .card-services .card-title {
     margin: 0;
 }
@@ -669,10 +685,6 @@ ul.row {
 
 /* Card TESTIMONIAL
       ============================= */
-
-.section-testimonial {
-    padding: var(--section-padding);
-}
 
 .card-testimonial {
     text-align: center;
@@ -702,12 +714,4 @@ ul.row {
     color: #efeded;
     font-size: 10rem;
     z-index: -1;
-}
-
-
-/*   Contact section
-*/
-
-.section-contact {
-    padding: var(--section-padding);
 }
