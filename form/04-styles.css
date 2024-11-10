@@ -918,6 +918,14 @@ textarea:focus {
     font-size: var(--font-size-small);
 }
 
+:-ms-input-placeholder {
+    color: var(--color-grey-dark);
+}
+
+::-ms-input-placeholder {
+    color: var(--color-grey-dark);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
