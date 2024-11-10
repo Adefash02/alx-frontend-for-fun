@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" href="/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="01-styles.css">
+    <link rel="stylesheet" href="02-styles.css">
 </head>
 
 <body>
@@ -155,7 +155,37 @@
                         <p>All fields are required.</p>
                     </header>
                     <form action="#" method="post">
-                        <!-- Form content will go here in future tasks -->
+                        <!-- First fieldset: Comment -->
+                        <fieldset>
+                            <legend class="visually-hidden">Your personal information</legend>
+                            <div class="form-group col-1-2">
+                                <label for="first-name">First Name:</label>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
+                            <div class="form-group col-1-2">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
+                            <div class="form-group col-2-3">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </fieldset>
+                        <!-- Second fieldset: Comment -->
+                        <fieldset>
+                            <legend class="visually-hidden">Your comment</legend>
+                            <div class="form-group col-2-3">
+                                <label for="comment-title">Comment Title:</label>
+                                <input type="text" id="comment-title" name="comment-title">
+                            </div>
+                            <div class="form-group col-2-3">
+                                <label for="comment-text">Comment:</label>
+                                <textarea id="comment-text" name="comment-text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </fieldset>
                     </form>
                 </section>
             </div>
