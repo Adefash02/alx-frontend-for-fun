@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" href="/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="03-styles.css">
+    <link rel="stylesheet" href="04-styles.css">
 </head>
 
 <body>
@@ -162,7 +162,7 @@
                                 <label for="your-first-name">First Name</label>
                                 <div class="form-field">
                                     <span class="form-field-container">
-                                        <input type="text" id="first-name" name="first-name">
+                                        <input type="text" id="your-first-name" placeholder="e.g Mike" name="your-first-name" pattern="[A-Za-zÀ-ž\s]{3,}" maxlength="35" autocomplete="on" accesskey="f" required>
                                     </span>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@
                                 <label for="your-last-name">Last Name</label>
                                 <div class="form-field">
                                     <span class="form-field-container">
-                                        <input type="text" id="last-name" name="last-name">
+                                        <input type="text" id="your-last-name" name="your-last-name" placeholder="e.g Mike" pattern="[A-Za-zÀ-ž\s]{3,}" maxlength="40" autocomplete="on" accesskey="1" required>
                                     </span>
                                 </div>
                             </div>
@@ -178,7 +178,7 @@
                                 <label for="your-email">Email</label>
                                 <div class="form-field">
                                     <span class="form-field-container">
-                                        <input type="email" id="email" name="email">
+                                        <input type="email" id="your-email" name="your-email" placeholder="e.g youremail@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="55" autocomplete="on" accesskey="e" required>
                                     </span>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                                 <label for="your-title">Title</label>
                                 <div class="form-field">
                                     <span class="form-field-container">
-                                        <input type="text" id="comment-title" name="comment-title">
+                                        <input type="text" id="your-title" name="your-comment-title" placeholder="e.g. I loved that article" maxlength="75" accesskey="t" required>
                                     </span>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@
                                 <label for="your-comment">Comment</label>
                                 <div class="form-field">
                                     <span class="form-field-container">
-                                        <textarea id="comment-text" name="comment-text"></textarea>
+                                        <textarea id="your-comment" name="your-comment" placeholder="Write your comment here" minlength="10" accesskey="c" cols="30" rows="6" required></textarea>
                                     </span>
                                 </div>
                             </div>
