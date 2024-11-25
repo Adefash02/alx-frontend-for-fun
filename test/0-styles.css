@@ -1,0 +1,75 @@
+/* General body styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* Centered list */
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    /* Space between items */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* List item styling */
+
+li {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 150px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+
+/* Icon container */
+
+.icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Specific icons */
+
+.i-html {
+    background-image: url('html-icon.png');
+    /* Replace with the sprite URL or separate image */
+}
+
+.i-css {
+    background-image: url('css-icon.png');
+    /* Replace with the sprite URL or separate image */
+}
+
+.i-js {
+    background-image: url('js-icon.png');
+    /* Replace with the sprite URL or separate image */
+}
