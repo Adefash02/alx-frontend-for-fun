@@ -60,16 +60,16 @@ li {
 /* Specific icons */
 
 .i-html {
-    background-image: url('html-icon.png');
+    background-image: url('images/html-icon.png');
     /* Replace with the sprite URL or separate image */
 }
 
 .i-css {
-    background-image: url('css-icon.png');
+    background-image: url('images/css-icon.png');
     /* Replace with the sprite URL or separate image */
 }
 
 .i-js {
-    background-image: url('js-icon.png');
+    background-image: url('images/js-icon.png');
     /* Replace with the sprite URL or separate image */
 }
