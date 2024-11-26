@@ -1,0 +1,87 @@
+/* 2-styles.css */
+
+
+/* Reset basic styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ebe0e0;
+}
+
+
+/* Toggle container styling */
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+
+/* Hide the actual checkbox */
+
+.toggle-cb {
+    display: none;
+}
+
+
+/* Label that acts as the toggle switch container */
+
+.toggle-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ebe0e0;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Inner section of the toggle (background details) */
+
+.toggle-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 60%;
+    background-color: #f31313;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Toggle switch (circle) */
+
+.toggle-switch {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(235, 226, 226);
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* When the checkbox is checked */
+
+.toggle-cb:checked+.toggle-label {
+    background-color: #e70707;
+    /* Green background when checked */
+}
+
+.toggle-cb:checked+.toggle-label .toggle-switch {
+    transform: translateX(30px);
+    /* Move the switch to the right */
+}

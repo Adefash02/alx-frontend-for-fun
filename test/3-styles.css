@@ -1,0 +1,142 @@
+/* 3-styles.css */
+
+
+/* General body styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Styling for the navigation menu */
+
+.menu {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+
+/* Initially hide the menu items */
+
+.menu-item {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #4caf50;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+    /* Hidden by default */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+
+/* Position menu items in a circular layout */
+
+.menu-item:nth-child(3) {
+    transform: translate(0, -120px);
+}
+
+.menu-item:nth-child(4) {
+    transform: translate(85px, -85px);
+}
+
+.menu-item:nth-child(5) {
+    transform: translate(120px, 0);
+}
+
+.menu-item:nth-child(6) {
+    transform: translate(85px, 85px);
+}
+
+.menu-item:nth-child(7) {
+    transform: translate(0, 120px);
+}
+
+
+/* The menu open button styling */
+
+.menu-open-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    /* Hidden by default */
+    opacity: 0;
+    transition: background 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s;
+}
+
+
+/* Styling the hamburger lines */
+
+.menu-line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Show menu when hovering over the menu container */
+
+.menu:hover>.menu-item,
+.menu:hover>.menu-open-button {
+    visibility: visible;
+    /* Becomes visible on hover */
+    opacity: 1;
+    /* Fully opaque */
+    transform: scale(1);
+    /* Expand to full size */
+}
+
+
+/* Transform menu open button lines into "X" on hover */
+
+.menu:hover>.menu-open-button:hover .menu-line-1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu:hover>.menu-open-button:hover .menu-line-3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* Menu item icon color changes to red on hover */
+
+.menu-item i {
+    color: white;
+    /* Default color for icons */
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-item:hover i {
+    color: red;
+    /* Change to red on hover */
+}

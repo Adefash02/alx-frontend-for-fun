@@ -1,0 +1,54 @@
+/* 1-styles.css */
+
+
+/* Reset basic styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* Style the h2 element */
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Remove underline by default for the anchor tag */
+
+a {
+    text-decoration: none;
+    color: #e61010;
+    position: relative;
+}
+
+
+/* Add a pseudo-element for the underline effect */
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #990c0c;
+    transition: width 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+
+/* On hover, show the underline */
+
+a:hover::after {
+    width: 100%;
+}
